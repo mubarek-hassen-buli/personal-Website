@@ -1,8 +1,15 @@
-
-import React from 'react';
+'use client';
+import React, { useEffect } from 'react';
 import { Github } from 'lucide-react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 const AboutSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true,     // Whether animation should happen only once
+    });
+  }, []);
   return (
     <section id="about" className="section-padding bg-background">
       <div className="max-w-4xl mx-auto">
@@ -12,7 +19,7 @@ const AboutSection = () => {
         
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div data-aos="fade-right" className="space-y-8">
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
                 I have been coding for over 5 years, beginning my 
@@ -42,10 +49,10 @@ const AboutSection = () => {
           </div>
 
           {/* Right Content */}
-          <div className="space-y-6">
+          <div data-aos="fade-left" className="space-y-6">
             {/* My Studio Card */}
             <div className="bg-card border border-border rounded-2xl p-6">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-6 mb-4">
                 <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">&lt;/&gt;</span>
                 </div>
@@ -66,8 +73,8 @@ const AboutSection = () => {
                 <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center mb-3">
                   <span className="text-white text-sm">💻</span>
                 </div>
-                <h3 className="text-foreground font-semibold text-base mb-1">Web Development</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <h3 className="text-foreground font-semibold text-base mb-1 whitespace-nowrap">Web Development</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed ">
                   Building high-performance websites 
                   with clean code and 
                   strong SEO 
