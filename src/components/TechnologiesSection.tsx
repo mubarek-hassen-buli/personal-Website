@@ -21,10 +21,10 @@ const TechnologiesSection = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding bg-card">
-      <div className="max-w-7xl mx-auto">
+    <section id="skills" className="section-padding bg-background">
+      <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Technologies I use.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Technologies I use.</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Over the years, I have worked with a variety of technologies. Here are some of the technologies I have 
             experience with.

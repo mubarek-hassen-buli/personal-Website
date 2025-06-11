@@ -30,10 +30,10 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="section-padding">
-      <div className="max-w-7xl mx-auto">
+    <section id="contact" className="section-padding bg-background">
+      <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact me.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Contact me.</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             I'm always open to discuss new opportunities and fun projects. If you have a project in mind, 
             or just want to say hi, feel free to send me a message.
