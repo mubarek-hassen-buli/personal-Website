@@ -22,7 +22,7 @@ const HeroSection = () => {
           {/* Left Content - Cards Layout */}
           <div className="space-y-6">
             {/* About Me Card */}
-            <div className="mb-6">
+            <div data-aos="fade-down-right" className="mb-6">
               <div className="flex items-center space-x-4 text-white/70 mb-4">
                 <Globe size={20} />
                 <span className="text-sm font-medium tracking-wider uppercase">
@@ -40,7 +40,7 @@ const HeroSection = () => {
             </div>
 
             {/* Mission Card */}
-            <div className="bg-black/40 backdrop-blur-sm border border-border rounded-xl p-6 space-y-4 mb-8">
+            <div  data-aos="flip-left"  className="bg-black/40 backdrop-blur-sm border border-border rounded-xl p-6 space-y-4 mb-8">
               <div className="flex items-center space-x-2 text-white/70 mb-4">
                 <Rocket size={20} />
                 <span className="text-sm font-medium tracking-wider uppercase">

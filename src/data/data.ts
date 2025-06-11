@@ -1,0 +1,17 @@
+export const technologies = [
+  { name: "HTML", icon: "/icons/html-svg.svg" },
+  { name: "CSS", icon: "/icons/css-3-svg.svg" },
+  { name: "JavaScript", icon: "/icons/javascript-svg.svg" },
+  { name: "TypeScript", icon: "/icons/typescript-svg.svg" },
+  { name: "React", icon: "/icons/react-svg.svg" },
+  { name: "Next.js", icon: "/icons/next-js-svg.svg" },
+  { name: "Node.js", icon: "/icons/nodejs-svg.svg" },
+  { name: "Python", icon: "/icons/python-svg.svg" },
+  { name: "MongoDB", icon: "/icons/mongo-svg.svg" },
+  { name: "PostgreSQL", icon: "/icons/postgresql-svg.svg" },
+  { name: "Docker", icon: "/icons/docker-svg.svg" },
+  { name: "AWS", icon: "/icons/aws-svg.svg" },
+  { name: "Git", icon: "/icons/git-svg.svg" },
+  { name: "Github", icon: "/icons/github-svg.svg" },
+  { name: "Figma", icon: "/icons/figma-svg.svg" },
+];

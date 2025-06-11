@@ -1,46 +1,47 @@
-
-import React from 'react';
-import { Heart } from 'lucide-react';
+import React from "react";
+import { Heart } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    'Important Links': [
-      { name: 'Home', href: '#home' },
-      { name: 'Projects', href: '#works' },
-      { name: 'Skills', href: '#skills' },
-      { name: 'Blog', href: '#blog' }
+    "Important Links": [
+      { name: "Home", href: "#home" },
+      { name: "Projects", href: "#works" },
+      { name: "Skills", href: "#skills" },
+      { name: "Blog", href: "#blog" },
     ],
-    'Social': [
-      { name: 'GitHub', href: 'https://github.com' },
-      { name: 'LinkedIn', href: 'https://linkedin.com' },
-      { name: 'Twitter', href: 'https://twitter.com' },
-      { name: 'Discord', href: 'https://discord.com' }
+    Social: [
+      { name: "GitHub", href: "https://github.com" },
+      { name: "LinkedIn", href: "https://linkedin.com" },
+      { name: "Twitter", href: "https://twitter.com" },
+      { name: "Discord", href: "https://discord.com" },
     ],
-    'Other': [
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Terms of Service', href: '#' },
-      { name: 'Sitemap', href: '#' },
-      { name: 'RSS', href: '#' }
-    ]
+    Other: [
+      { name: "Privacy Policy", href: "#" },
+      { name: "Terms of Service", href: "#" },
+      { name: "Sitemap", href: "#" },
+      { name: "RSS", href: "#" },
+    ],
   };
 
   return (
-    <footer className="bg-card border-t border-border">
+    <footer className="bg-card border-t border-border" >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">S</span>
+                <span className="text-primary-foreground font-bold text-sm">
+                  M
+                </span>
               </div>
-              <span className="font-semibold text-lg">Suhaib</span>
+              <span className="font-semibold text-lg">Mubarek</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Passionate Fullstack Web developer crafting seamless digital experiences 
-              with modern technologies.
+              Passionate Fullstack Web developer crafting seamless digital
+              experiences with modern technologies.
             </p>
           </div>
 
@@ -66,12 +67,12 @@ const Footer = () => {
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-muted-foreground text-sm">
-            Copyright © {currentYear} • Made by Suhaib
+            Copyright © {currentYear} • Made by Mubarek
           </p>
           <div className="flex items-center space-x-1 text-muted-foreground text-sm">
             <span>Made with</span>
             <Heart size={16} className="text-red-500 fill-current" />
-            <span>in Bangladesh</span>
+            <span>in Ethiopia</span>
           </div>
         </div>
       </div>
