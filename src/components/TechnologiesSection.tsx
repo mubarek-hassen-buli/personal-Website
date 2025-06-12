@@ -1,5 +1,6 @@
 import React from "react";
 import { technologies } from "@/data/data";
+
 const TechnologiesSection = () => {
   return (
     <section id="skills" className="section-padding bg-background">
@@ -18,7 +19,7 @@ const TechnologiesSection = () => {
           {technologies.map((tech, index) => (
             <div
               key={index}
-              className="group flex flex-col items-center p-6 bg-background rounded-xl hover-glow transition-all duration-300 hover:-translate-y-2"
+              className="group flex flex-col items-center p-6 bg-background rounded-xl  transition-all duration-300 hover:-translate-y-2"
             >
               <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-300">
                 <img src={tech.icon} alt={tech.name} className="w-8 h-8" />
